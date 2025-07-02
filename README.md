@@ -2,10 +2,7 @@
 
 The following points should be noted:
 
-  1、For all cases in the paper, due to the low solution efficiency of the W matrix, therefore, here we provide two methods to accelerate the solution: for small-scale cases, we 
-  adopted the **graph decomposition technique**, i.e., instead of treating the system as an integrated 66-bus system, it is regarded as two 33-bus systems. Each system has its own 
-  OPF, and communication between systems is carried out via SOPs or PRFCs (or treated as a virtual "wire"). For more detailed information on graph decomposition techniques, please 
-  refer to [A Two-Stage Decomposition Approach for AC Optimal Power Flow] (doi: 10.1109/TPWRS.2020.3002189). For large-scale cases, we adopted dual technology, and the dualization of 
+  1、For all cases in the paper, due to the low solution efficiency of the W matrix, therefore, here we provide a method to accelerate the solution: for large-scale cases (IEE 59/141 system), we adopted dual technology, and the dualization of 
   the problem is  detailed in <<dual-OPF-CE.pdf>>. It should be noted that Reference [Zero Duality Gap in Optimal Power Flow Problem] (doi: 10.1109/TPWRS.2011.2160974) has proven 
   that the relaxation problem and the dual OPF problem in the main text **satisfy strong duality**, that is, its dual gap is zero. **Therefore,the two solving methods are essentially 
   equivalent.**  In addition, there are many other methods to accelerate the solution of SDP, such as partitioning the W matrix and then using the sparsity of the matrix to 

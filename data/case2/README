@@ -1,3 +1,5 @@
-I sincerely apologize that the optimal data obtained from 20 experiments was stored in another folder, which was accidentally deleted during the sorting process. 
+1. I sincerely apologize that the optimal data obtained from 20 experiments was stored in another folder, which was accidentally deleted during the sorting process. 
 Therefore, we reproduced the experiment based on the optimal data. The reproduction results show that the comprehensive cost is extremely close 
 to the original optimal cost (with an absolute error controlled within ±0.5), but the costs of each component have fluctuated to a certain extent.
+
+2. Depending on the final solution accuracy, the numerical value may vary within a range of ±0.1.

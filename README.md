@@ -14,5 +14,4 @@ the accuracy is 1e-4 and 78.35 when the accuracy is 1e-7, the optimal gap betwee
 
   3、The empirical running times in the text are all based on the times obtained by the second acceleration method.
 
-  4、The data is being sorted out and is expected to be uploaded within the next 1 to 2 months.
 If you have any questions about the manuscript or code, please contact 1743773910@qq.com or leave a message under this repository.

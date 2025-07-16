@@ -8,7 +8,7 @@ The following points should be noted:
   equivalent.**  In addition, there are many other methods to accelerate the solution of SDP, such as partitioning the W matrix and then using the sparsity of the matrix to 
   accelerate the solution [Solution of Optimal Power Flow Problems by Semi-definite Programming] (doi: 10.13334/j.0258-8013.pcsee.2008.19.006).
 
-  2、The solution accuracy is generally set to 1e-7, but in order to accelerate the calculation in the paper, we set the solution accuracy to 1e-4. It should be noted that the 
+  2、The solution accuracy is generally set to 1e-7, but in order to accelerate the calculation in the paper, we set the solution accuracy to 5e-4. It should be noted that the 
 accuracy of 1e-4 roughly meets the accuracy requirements, and the optimal gap between the two is very small , for example, for IEEE 33 bus system, the value is 78.34 when 
 the accuracy is 1e-4 and 78.35 when the accuracy is 1e-7, the optimal gap between the two is approximately 0.01/78.35 ≈ 0%. So the two can be approximately considered equal.
 

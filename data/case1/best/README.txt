@@ -1,1 +1,0 @@
-These results are reproductions based on the obtained variable X. Due to differences in actual solution accuracy and numerical rounding error, some information may slightly differ from that in the main text.

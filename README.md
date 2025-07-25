@@ -13,4 +13,8 @@ The following points should be noted:
   3、The empirical running times in the text are all based on the times obtained by the second acceleration method.
 
   4、The values in Table 4b do not conform to the rule that "IPM value ≥ global optimal value ≥ SDP value". The reason is as follows: For the OPF problem without deployed control devices, we used the SDP solver built in MATPOWER for solution; however, when using the independently implemented dual-OPF algorithm, the obtained results conform to the above-mentioned rule. Therefore, we speculate that there is a slight deviation in the SDP solver built in MATPOWER for this test case. For the relevant verification process, please refer to the video.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6c25ad48bc45eb87a5a8805a46356ba806adc5c4
 If you have any questions about the manuscript or code, please contact 1743773910@qq.com or leave a message under this repository.

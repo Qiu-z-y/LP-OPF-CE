@@ -1,1 +1,0 @@
-These data are obtained by reproducing the optimal locations and optimal capacities solved by the algorithm. Due to the existence of solution errors and rounding errors, there may be slight discrepancies between these data and those in the paper.

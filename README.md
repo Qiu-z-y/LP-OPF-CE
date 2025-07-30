@@ -8,8 +8,6 @@ The following points should be noted:
   equivalent.**  In addition, there are many other methods to accelerate the solution of SDP, such as partitioning the W matrix and then using the sparsity of the matrix to 
   accelerate the solution [Solution of Optimal Power Flow Problems by Semi-definite Programming] (doi: 10.13334/j.0258-8013.pcsee.2008.19.006).
 
-  2、For Case 1, we stipulate that a solution is deemed successful when the computational accuracy reaches approximately 7e-4. At this accuracy level, the absolute difference between the results and those obtained with an accuracy of 1e-7 is extremely small in the vast majority of cases (mostly ≤ 0.1).
-
-  3、The values in Table 4b do not conform to the rule that "IPM value ≥ global optimal value ≥ SDP value". The reason is as follows: For the OPF problem without deployed control devices, we used the SDP solver built in MATPOWER for solution; however, when using the independently implemented dual-OPF algorithm, the obtained results conform to the above-mentioned rule. Therefore, we speculate that there is a slight deviation in the SDP solver built in MATPOWER for this test case. For the relevant verification process, please refer to the video.
+  2、The values in Table 4b do not conform to the rule that "IPM value ≥ global optimal value ≥ SDP value". The reason is as follows: For the OPF problem without deployed control devices, we used the SDP solver built in MATPOWER for solution; however, when using the independently implemented dual-OPF algorithm, the obtained results conform to the above-mentioned rule. Therefore, we speculate that there is a slight deviation in the SDP solver built in MATPOWER for this test case. For the relevant verification process, please refer to the video.
 
 If you have any questions about the manuscript or code, please contact 1743773910@qq.com or leave a message under this repository.

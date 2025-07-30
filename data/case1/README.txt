@@ -1,0 +1,2 @@
+1、These pieces of information are reconstructed based on the location and capacity data derived from algorithms. Due to the existence of precision errors and rounding errors, they may slightly differ from what is presented in the text.
+2、A solution is considered successful if the final solving accuracy reaches 7e-4. The difference between the value obtained at this accuracy and that obtained at an accuracy of 1e-7 is within 0.07, which has been verified by MATLAB.

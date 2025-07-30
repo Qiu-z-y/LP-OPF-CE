@@ -270,11 +270,11 @@ function [W1, P1, Q1,Plm1, Qlm1, Vk1, alpha1, W2, P2, Q2,Plm2, Qlm2,Vk2, alpha2,
         constraint = [constraint, Plm2(i,2) <= Plm_cons2(p,q)];
     end
     
-    j = 1;
+
     for i = 1:ns1
        if ismember(i,fr)
+             j = find(i == fr)
             constraint = [constraint, Pmin_cons1(i) - Pd_cons1(i) <= P1(i,1) + Pdevice(j,1) <= Pmax_cons1(i) - Pd_cons1(i), Qmin_cons1(i) - Qd_cons1(i) <= Q1(i,1) + Qdevice(j,1) <= Qmax_cons1(i) - Qd_cons1(i)];
-            j = j + 1;
        else
             constraint = [constraint, Pmin_cons1(i) - Pd_cons1(i) <= P1(i,1) <= Pmax_cons1(i) - Pd_cons1(i), Qmin_cons1(i) - Qd_cons1(i) <= Q1(i,1) <= Qmax_cons1(i) - Qd_cons1(i)];
        end
@@ -283,11 +283,10 @@ function [W1, P1, Q1,Plm1, Qlm1, Vk1, alpha1, W2, P2, Q2,Plm2, Qlm2,Vk2, alpha2,
     constraint = [constraint, W1 >= 0];
     
     
-    j = 1;
     for i = 1:ns2
        if ismember(i,to)
+             j = find(i == to);
             constraint = [constraint, Pmin_cons2(i) - Pd_cons2(i) <= P2(i,1) + Pdevice(j,2) <= Pmax_cons2(i) - Pd_cons2(i), Qmin_cons2(i) - Qd_cons2(i) <= Q2(i,1) + Qdevice(j,2) <= Qmax_cons2(i) - Qd_cons2(i)];
-            j = j + 1;
        else
             constraint = [constraint, Pmin_cons2(i) - Pd_cons2(i) <= P2(i,1) <= Pmax_cons2(i) - Pd_cons2(i), Qmin_cons2(i) - Qd_cons2(i) <= Q2(i,1) <= Qmax_cons2(i) - Qd_cons2(i)];
        end
